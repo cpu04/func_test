@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu May 26 20:05:00 2022
+# Make data base, printed on Mon May 30 22:25:11 2022
 
 # Variables
 
@@ -21,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c978a13a-7cf4-4dc8-967e-cfda6ad2f626.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-12bcda54-3f20-4b79-97d1-bf6849c0848a.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -57,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/cpu/.config/Code/CachedData/c3511e6c69bb39013c4a4
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.W9Y0M1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.SSHWM1
 # default
 .LOADED := 
 # default
@@ -94,14 +96,15 @@ MAKEFILE_LIST := makefile
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
+ 
 # environment
-VSCODE_PID = 9885
+VSCODE_PID = 3633
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1387,unix/ubuntu:/tmp/.ICE-unix/1387
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1451,unix/ubuntu:/tmp/.ICE-unix/1451
 # automatic
 *F = $(notdir $*)
 # environment
@@ -145,7 +148,7 @@ LC_MONETARY = en_US.UTF-8
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = 2a0660fa3a1a415eaaf18c08affc8b77
+INVOCATION_ID = b2cbe1af28da464385cd7b3f5ca8d86a
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -175,9 +178,9 @@ LOGNAME = cpu
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
-.DEFAULT_GOAL := file.out
+.DEFAULT_GOAL := file
 # environment
-SYSTEMD_EXEC_PID = 1438
+SYSTEMD_EXEC_PID = 1479
 # environment
 DISPLAY = :0
 # environment
@@ -187,11 +190,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1275
+MANAGERPID = 1324
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 9885
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3633
 # environment
 _ = /usr/share/code/code
 # environment
@@ -199,7 +202,7 @@ LC_PAPER = en_US.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:45088
+JOURNAL_STREAM = 8:43612
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -239,9 +242,9 @@ LC_IDENTIFICATION = en_US.UTF-8
 
 # Directories
 
-# . (device 2051, inode 3148894): 8 files, no impossibilities.
+# . (device 2051, inode 3148894): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -278,12 +281,16 @@ sub.o: sub.c
 # Not a target:
 all:
 #  Command line target.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
+
+file: sub.o main.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 2):
+	gcc -o file.out sub.o main.o
 
 # Not a target:
 main.c:
@@ -301,16 +308,9 @@ main.o: main.c
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-26 20:00:50.213290347
+#  Last modified 2022-05-30 22:13:45.978386979
 #  File has been updated.
 #  Successfully updated.
-
-file.out: sub.o main.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 2):
-	gcc -o file.out sub.o main.o
 
 # files hash-table stats:
 # Load=10/1024=1%, Rehash=0, Collisions=0/26=0%
@@ -320,12 +320,12 @@ file.out: sub.o main.o
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 129 B / avg = 7 B
-# current buf: size = 8162 B / used = 129 B / count = 17 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 134 B / avg = 7 B
+# current buf: size = 8162 B / used = 134 B / count = 18 / avg = 7 B
 
-# strcache performance: lookups = 29 / hit rate = 41%
+# strcache performance: lookups = 30 / hit rate = 40%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Thu May 26 20:05:00 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Mon May 30 22:25:11 2022
 
  
