@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 30 22:25:11 2022
+# Make data base, printed on Tue Jun 14 19:41:01 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-12bcda54-3f20-4b79-97d1-bf6849c0848a.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2d663877-79ec-47e3-bbf3-4a7fe915544b.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -59,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/cpu/.config/Code/CachedData/c3511e6c69bb39013c4a4
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.SSHWM1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.06MKN1
 # default
 .LOADED := 
 # default
@@ -96,15 +96,14 @@ MAKEFILE_LIST := makefile
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
- 
 # environment
-VSCODE_PID = 3633
+VSCODE_PID = 3636
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1451,unix/ubuntu:/tmp/.ICE-unix/1451
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1400,unix/ubuntu:/tmp/.ICE-unix/1400
 # automatic
 *F = $(notdir $*)
 # environment
@@ -148,7 +147,7 @@ LC_MONETARY = en_US.UTF-8
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = b2cbe1af28da464385cd7b3f5ca8d86a
+INVOCATION_ID = a6fdd96fd283465c8eaf886a8f628542
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -178,9 +177,9 @@ LOGNAME = cpu
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
-.DEFAULT_GOAL := file
+.DEFAULT_GOAL := file.out
 # environment
-SYSTEMD_EXEC_PID = 1479
+SYSTEMD_EXEC_PID = 1426
 # environment
 DISPLAY = :0
 # environment
@@ -190,11 +189,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1324
+MANAGERPID = 1299
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3633
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3636
 # environment
 _ = /usr/share/code/code
 # environment
@@ -202,7 +201,7 @@ LC_PAPER = en_US.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:43612
+JOURNAL_STREAM = 8:43948
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -281,16 +280,10 @@ sub.o: sub.c
 # Not a target:
 all:
 #  Command line target.
+ 
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
-
-file: sub.o main.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 2):
-	gcc -o file.out sub.o main.o
 
 # Not a target:
 main.c:
@@ -308,9 +301,16 @@ main.o: main.c
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-30 22:13:45.978386979
+#  Last modified 2022-05-30 22:25:12.556962351
 #  File has been updated.
 #  Successfully updated.
+
+file.out: sub.o main.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 2):
+	gcc -o file.out sub.o main.o
 
 # files hash-table stats:
 # Load=10/1024=1%, Rehash=0, Collisions=0/26=0%
@@ -320,12 +320,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 134 B / avg = 7 B
-# current buf: size = 8162 B / used = 134 B / count = 18 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 129 B / avg = 7 B
+# current buf: size = 8162 B / used = 129 B / count = 17 / avg = 7 B
 
-# strcache performance: lookups = 30 / hit rate = 40%
+# strcache performance: lookups = 30 / hit rate = 43%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/30=0%
-# Finished Make data base on Mon May 30 22:25:11 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Tue Jun 14 19:41:01 2022
 
  
