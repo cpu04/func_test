@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 19:41:01 2022
+# Make data base, printed on Sun Jul  3 22:16:58 2022
 
 # Variables
 
@@ -23,7 +21,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2d663877-79ec-47e3-bbf3-4a7fe915544b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8e2fe246-c7d6-4b90-ba3b-09ac4d7cd8f2.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -55,11 +53,11 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/cpu/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /home/cpu/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.06MKN1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.4G2UO1
 # default
 .LOADED := 
 # default
@@ -97,13 +95,13 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3636
+VSCODE_PID = 4207
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1400,unix/ubuntu:/tmp/.ICE-unix/1400
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1512,unix/ubuntu:/tmp/.ICE-unix/1512
 # automatic
 *F = $(notdir $*)
 # environment
@@ -113,7 +111,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"738ac08552cca045871a73764b8c446f.ko","_translationsConfigFile":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/tcf.json","_cacheRoot":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko","_resolvedLanguagePackCoreLocation":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"738ac08552cca045871a73764b8c446f.ko","_translationsConfigFile":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/tcf.json","_cacheRoot":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko","_resolvedLanguagePackCoreLocation":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/cpu/.config/Code/clp/738ac08552cca045871a73764b8c446f.ko/corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -147,7 +145,7 @@ LC_MONETARY = en_US.UTF-8
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = a6fdd96fd283465c8eaf886a8f628542
+INVOCATION_ID = 971a6ca7a08d4f81b5e2e4365ed1aef8
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -179,7 +177,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := file.out
 # environment
-SYSTEMD_EXEC_PID = 1426
+SYSTEMD_EXEC_PID = 1533
 # environment
 DISPLAY = :0
 # environment
@@ -189,11 +187,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1299
+MANAGERPID = 1419
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3636
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4207
 # environment
 _ = /usr/share/code/code
 # environment
@@ -201,7 +199,7 @@ LC_PAPER = en_US.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:43948
+JOURNAL_STREAM = 8:47455
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -213,7 +211,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-82ba6d45-1.67.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-82ba6d45-1.68.0-main.sock
 # environment
 IM_CONFIG_PHASE = 1
 # environment
@@ -281,6 +279,8 @@ sub.o: sub.c
 all:
 #  Command line target.
  
+make: *** No rule to make target 'all'.  Stop.
+
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
@@ -326,6 +326,6 @@ file.out: sub.o main.o
 # strcache performance: lookups = 30 / hit rate = 43%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/30=0%
-# Finished Make data base on Tue Jun 14 19:41:01 2022
+# Finished Make data base on Sun Jul  3 22:16:59 2022
 
  
